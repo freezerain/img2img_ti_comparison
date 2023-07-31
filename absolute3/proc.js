@@ -244,7 +244,7 @@ function getXAxisContent(x, y, xAxis, val, x2Axis, x2val, y2Axis, y2val) {
 function setImgPlaceholder(img) {
     img.onerror = undefined;
     img.dataset.errored_src = img.src;
-    img.src = 'placeholder.png';
+    img.src = 'placeholder.jpg';
     if (rawData.min_width) {
         img.width = rawData.min_width;
         img.height = rawData.min_height;
@@ -534,7 +534,7 @@ function makeImage() {
     var pad_x = 64, pad_y = 64;
     for (var row of rows) {
         var images = Array.from(row.getElementsByTagName('img'));
-        var real_images = images.filter(i => i.src != 'placeholder.png');
+        var real_images = images.filter(i => i.src != 'placeholder.jpg');
         widest_width = Math.max(widest_width, ...real_images.map(i => i.naturalWidth));
         var height = Math.max(...real_images.map(i => i.naturalHeight));
         var y = pad_y + total_height;
@@ -648,7 +648,7 @@ function makeImage() {
     for (var row of rowData) {
         var x = pad_x;
         for (var image of row.images) {
-            if (image.src != 'placeholder.png') {
+            if (image.src != 'placeholder.jpg') {
                 ctx.drawImage(image, x, row.y);
                 x += widest_width + 1;
             }
