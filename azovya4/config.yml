@@ -1,0 +1,13 @@
+grid:
+  title: azovya4
+  description: ''
+  format: jpg
+  author: Unspecified
+axes:
+  Seed: 40, 41
+  Model: aZovyaRPGArtistTools_v3VAE.safetensors [c8094fea44]
+  Prompt: ' || (best quality, masterpiece, good lighting, professional, High-resolution, Sharp, Clear, Detailed, Crisp, Noise-free, Accurate, Vibrant, Smooth, Enhanced)'
+  Negative Prompt: ' || (low quality, lowres, ugly, overexposure, horror), (monochrome, sketch, blurred, Blurry, cartoon), (badly drawn face, bad drawn picture), (huge eyes, missing or extra body part, deformed body part, bad anatomy), (Pixelated, Distorted, Grainy, Over-sharpened, Artifacts, Washed-out, Jagged, Compressed)'
+  Denoising: '0.5'
+  CFG Scale: 4, 7, 9
+  Styles: None, bad_pictures, bad_prompt_version2-neg, BadDream, badhandv4, badv5, By bad artist -neg, CyberRealistic_Negative-neg, deformityv6, difConsistency_negative_v2, easynegative, epiCNegative, FastNegativeV2, fcNeg-neg, negative_hand-neg, NegfeetV2, ng_deepnegative_v1_2t, ng_deepnegative_v1_75t, UnrealisticDream, Unspeakable-Horrors-64v, Unspeakable-Horrors-Composition, Unspeakable-Horrors-Composition-4v, verybadimagenegative_v1.3, wise_dragon_eye_light-neg, wise_dragon_eye-neg, rat_vision-neg
